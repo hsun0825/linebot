@@ -32,7 +32,10 @@ namespace testline
                             result = new List<ISendMessage>
                             {
                                 new TextMessage("HELLLLLLLLLLLLLLLLLLLO")
-                            };
+                           
+                        };
+                            if (result != null)
+                                break;
                         }
                         
                         //頻道Id
