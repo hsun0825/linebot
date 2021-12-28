@@ -20,8 +20,8 @@ namespace testline
         protected override async Task OnMessageAsync(MessageEvent ev)
         {
             var result = null as List<ISendMessage>;
-            
 
+            var textmessage = ev;
             switch (ev.Message)
             {
                 //文字訊息
@@ -33,7 +33,7 @@ namespace testline
                         //使用者Id
                         var userId = ev.Source.UserId;
 
-                        if (ev.Message.Equals("A"))
+                        if (ev.Equals(textmessage))
                         {
                             result = new List<ISendMessage>
                             {
