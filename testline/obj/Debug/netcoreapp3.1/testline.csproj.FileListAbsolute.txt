@@ -8,7 +8,6 @@ D:\LineBotC#\testline\bin\Debug\netcoreapp3.1\testline.dll
 D:\LineBotC#\testline\bin\Debug\netcoreapp3.1\testline.pdb
 D:\LineBotC#\testline\bin\Debug\netcoreapp3.1\Line.Messaging.dll
 D:\LineBotC#\testline\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-D:\LineBotC#\testline\obj\Debug\netcoreapp3.1\testline.csproj.AssemblyReference.cache
 D:\LineBotC#\testline\obj\Debug\netcoreapp3.1\testline.AssemblyInfoInputs.cache
 D:\LineBotC#\testline\obj\Debug\netcoreapp3.1\testline.AssemblyInfo.cs
 D:\LineBotC#\testline\obj\Debug\netcoreapp3.1\testline.csproj.CoreCompileInputs.cache

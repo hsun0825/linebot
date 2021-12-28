@@ -21,7 +21,7 @@ namespace testline
         {
             var result = null as List<ISendMessage>;
 
-           
+
             switch (ev.Message)
             {
                 //文字訊息
@@ -40,17 +40,17 @@ namespace testline
                                 new TextMessage("HELLLLLLLLLLLLLLLLLLLO")
 
                         };
-                           
+
                             if (result != null)
                                 break;
                         }
                         else
                         {
 
-                           
-                                new TextMessage("HI")
 
-                 
+                            new TextMessage("HI");
+
+                            break;
 
                         }
 
@@ -65,9 +65,10 @@ namespace testline
                         break;
 
                     }
-
-            if (result != null)
-                await _messagingClient.ReplyMessageAsync(ev.ReplyToken, result);
+            }
+                    if (result != null)
+                        await _messagingClient.ReplyMessageAsync(ev.ReplyToken, result);
+            }
         }
     }
-}
+
