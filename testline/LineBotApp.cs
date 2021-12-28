@@ -15,15 +15,26 @@ namespace testline
             _messagingClient = lineMessagingClient;
         }
 
+        //OnMessageAsync: 接收使用者訊息。
+        //ReplyMessageAsync: 傳訊息給使用者。
         protected override async Task OnMessageAsync(MessageEvent ev)
         {
             var result = null as List<ISendMessage>;
+            
 
             switch (ev.Message)
             {
                 //文字訊息
-                case TextEventMessage textMessage:
+                case EventMessage textMessage:
                     {
+                        if (textMessage.Type.Equals("A"))
+                        {
+                            result = new List<ISendMessage>
+                            {
+                                new TextMessage("HELLLLLLLLLLLLLLLLLLLO")
+                            };
+                        }
+                        
                         //頻道Id
                         var channelId = ev.Source.Id;
                         //使用者Id
@@ -36,6 +47,7 @@ namespace testline
                     };
                     }
                     break;
+             
             }
 
             if (result != null)
