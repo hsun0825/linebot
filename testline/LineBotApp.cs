@@ -33,7 +33,7 @@ namespace testline
                         //使用者Id
                         var userId = ev.Source.UserId;
 
-                        if (ev.Equals(textmessage))
+                        if (ev.Equals("A"))
                         {
                             result = new List<ISendMessage>
                             {
