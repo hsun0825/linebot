@@ -27,7 +27,13 @@ namespace testline
                 //文字訊息
                 case EventMessage textMessage:
                     {
-                        if (textMessage.Type.Equals("A"))
+
+                        //頻道Id
+                        var channelId = ev.Source.Id;
+                        //使用者Id
+                        var userId = ev.Source.UserId;
+
+                        if (ev.Message.Type.Equals("A"))
                         {
                             result = new List<ISendMessage>
                             {
@@ -38,10 +44,7 @@ namespace testline
                                 break;
                         }
                         
-                        //頻道Id
-                        var channelId = ev.Source.Id;
-                        //使用者Id
-                        var userId = ev.Source.UserId;
+                  
 
                         //回傳 hellow
                         result = new List<ISendMessage>
