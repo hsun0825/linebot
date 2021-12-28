@@ -21,7 +21,7 @@ namespace testline
         {
             var result = null as List<ISendMessage>;
 
-            string A;
+           
             switch (ev.Message)
             {
                 //文字訊息
@@ -33,28 +33,36 @@ namespace testline
                         //使用者Id
                         var userId = ev.Source.UserId;
 
-                        if (ev.Equals("A"))
+                        if (textMessage.ToString() == "A")
                         {
                             result = new List<ISendMessage>
                             {
                                 new TextMessage("HELLLLLLLLLLLLLLLLLLLO")
-                           
+
                         };
+                           
                             if (result != null)
                                 break;
                         }
+                        else
+                        {
+
+                            new TextMessage("HIIIIIIIIIIII");
+
                         
-                  
+                        }
+
+
 
                         //回傳 hellow
-                        result = new List<ISendMessage>
-                    {
-                        new TextMessage("hellow")
-                    };
+                        //    result = new List<ISendMessage>
+                        //{
+                        //    new TextMessage("hellow")
+                        //};
+                        //}
+                        break;
+
                     }
-                    break;
-             
-            }
 
             if (result != null)
                 await _messagingClient.ReplyMessageAsync(ev.ReplyToken, result);
