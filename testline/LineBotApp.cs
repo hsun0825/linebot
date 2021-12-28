@@ -21,7 +21,7 @@ namespace testline
         {
             var result = null as List<ISendMessage>;
 
-            var textmessage = ev;
+            string A;
             switch (ev.Message)
             {
                 //文字訊息
