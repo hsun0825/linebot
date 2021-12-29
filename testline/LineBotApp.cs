@@ -25,6 +25,7 @@ namespace testline
             {
                 //文字訊息
                 case TextEventMessage textMessage:
+                    if (textMessage.Text=="A")
                     {
                         await _messagingClient.ReplyMessageAsync(ev.ReplyToken,
                             $"收到的是文字訊息，內容: {textMessage.Text}");
