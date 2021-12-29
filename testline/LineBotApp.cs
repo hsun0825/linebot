@@ -19,56 +19,19 @@ namespace testline
         //ReplyMessageAsync: 傳訊息給使用者。
         protected override async Task OnMessageAsync(MessageEvent ev)
         {
-            var result = null as List<ISendMessage>;
 
 
-            switch (ev.Message)
+            switch (ev.Message.Fix())
             {
                 //文字訊息
-                case EventMessage textMessage:
+                case TextEventMessage textMessage:
                     {
-
-                        //頻道Id
-                        var channelId = ev.Source.Id;
-                        //使用者Id
-                        var userId = ev.Source.UserId;
-
-                        if (textMessage.ToString() == "A")
-                        {
-                            result = new List<ISendMessage>
-                            {
-                                new TextMessage("HELLLLLLLLLLLLLLLLLLLO")
-
-                        };
-
-                            if (result != null)
-                                break;
-                        }
-                        else
-                        {
-
-
-                            new TextMessage("HI");
-
-                            break;
-
-                        }
-
-
-
-                        //回傳 hellow
-                        //    result = new List<ISendMessage>
-                        //{
-                        //    new TextMessage("hellow")
-                        //};
-                        //}
-                        break;
-
+                        await _messagingClient.ReplyMessageAsync(ev.ReplyToken,
+                            $"收到的是文字訊息，內容: {textMessage.Text}");
                     }
+                    break;
             }
-                    if (result != null)
-                        await _messagingClient.ReplyMessageAsync(ev.ReplyToken, result);
-            }
+        }
         }
     }
 
