@@ -25,14 +25,13 @@ namespace testline
             {
                 //文字訊息
                 case TextEventMessage textMessage:
-                    if (textMessage.Text == "A")
+                    if (textMessage.Text.Contains("A"))
                     {
                         await _messagingClient.ReplyMessageAsync(ev.ReplyToken,
                             $"收到的是文字訊息，內容: {textMessage.Text}");
                     }
                     else {
-                        await _messagingClient.ReplyMessageAsync(ev.ReplyToken,
-                                $"HI");
+                        await _messagingClient.ReplyMessageAsync(ev.ReplyToken,$"HI");
                     }
 
 
