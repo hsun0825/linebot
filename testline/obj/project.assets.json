@@ -4476,11 +4476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LineBotC#\\testline\\testline.csproj",
+      "projectUniqueName": "D:\\LineBotC# - 複製\\testline\\testline.csproj",
       "projectName": "testline",
-      "projectPath": "D:\\LineBotC#\\testline\\testline.csproj",
+      "projectPath": "D:\\LineBotC# - 複製\\testline\\testline.csproj",
       "packagesPath": "C:\\Users\\jess_lin\\.nuget\\packages\\",
-      "outputPath": "D:\\LineBotC#\\testline\\obj\\",
+      "outputPath": "D:\\LineBotC# - 複製\\testline\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

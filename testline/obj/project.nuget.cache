@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7C0MZECvkMMn8x5cXObn9pZ9gvbNPLMb13Zswm/A619dH3ZQi061553K1RxUeBqp/Y9/KVAtPyDtwQR6Z60t9Q==",
+  "dgSpecHash": "BDdJDgEjO6QfYOrqPWQt7XKlex35jiK+/tNUfLyPI8nEpR9MPeCojo5mFF6U+ShHknEBK3cSM+4qQ5OahbYFhA==",
   "success": true,
-  "projectFilePath": "D:\\LineBotC#\\testline\\testline.csproj",
+  "projectFilePath": "D:\\LineBotC# - 複製\\testline\\testline.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jess_lin\\.nuget\\packages\\line.messaging\\1.4.5\\line.messaging.1.4.5.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
